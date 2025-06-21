@@ -1,0 +1,127 @@
+.genreFilter {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+.genreHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.genreHeader h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.clearButton {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.clearButton:hover {
+    background: #b8070f;
+}
+
+.genreList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.genreButton {
+    background: #333;
+    color: #fff;
+    border: 2px solid #555;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.genreButton:hover {
+    background: #555;
+    border-color: #777;
+    transform: translateY(-1px);
+}
+
+.genreButton.selected {
+    background: #e50914;
+    border-color: #e50914;
+    color: white;
+    transform: scale(1.05);
+}
+
+.genreButton.selected:hover {
+    background: #b8070f;
+    border-color: #b8070f;
+}
+
+.showMoreButton {
+    background: transparent;
+    color: #e50914;
+    border: 1px solid #e50914;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.showMoreButton:hover {
+    background: #e50914;
+    color: white;
+}
+
+.selectedGenres {
+    margin-top: 15px;
+    padding: 10px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    border-left: 4px solid #e50914;
+}
+
+.selectedGenres p {
+    color: #ccc;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.loading {
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .genreFilter {
+        padding: 15px;
+    }
+    
+    .genreHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .genreButton {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
